@@ -1,4 +1,9 @@
 # RinRinStay_BNB_Reserve
+![image](https://github.com/HsiaoTingHong/RinRinStay_BNB_Reserve/assets/139849443/2a5b7cda-0ced-4c74-ab67-980e1dc909d3)
+<br/>
+![image](https://github.com/HsiaoTingHong/RinRinStay_BNB_Reserve/assets/139849443/5bcdd144-b105-463c-8c26-d7b36cac77da)
+<br/>
+
 ## Rin Rin Stay 訂房系統 作品說明
 * 提供旅宿業者使用的訂房系統，功能包含**使用者前台、使用者會員專區，以及後台管理系統**
 * 使用 PHP & JavaScript 製作 CRUD 功能的前後端 API 串接資料庫
