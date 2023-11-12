@@ -1,10 +1,20 @@
 # RinRinStay_BNB_Reserve
-## 作品說明
-* 提供小型旅宿業者使用的簡易訂房系統，介面包含**使用者前台、使用者會員專區，以及管理系統後台**
-* 使用PHP製作CRUD功能的前後端串接資料庫的多頁式網站
+## Rin Rin Stay 訂房系統 作品說明
+* 提供旅宿業者使用的訂房系統，功能包含**使用者前台、使用者會員專區，以及後台管理系統**
+* 使用 PHP & JavaScript 製作 CRUD 功能的前後端 API 串接資料庫
+* 支援 RWD 響應式網頁
 <br/>
-[網站前台](連結路徑網址) <br/>
-[管理後台](連結路徑網址) <br/>
+
+## DEMO連結
+* [網頁前台](http://www.hsiaoting1003.byethost6.com/)
+* [後台管理](http://www.hsiaoting1003.byethost6.com/manage/)
+<br/>
+
+## 測試帳號
+```
+帳號 projectbnb@gmail.com
+密碼 0000
+```
 <br/>
 
 ## 功能介紹
@@ -30,17 +40,11 @@
 * 提供業者對於資料庫中的會員資料/訂房訂單/聯絡表單/房型介紹/交通資訊的**新增/修改/查詢/刪除功能**<br/>
 <br/>
 
-```
-測試用帳號 projectbnb@gmail.com
-密碼 0000
-```
-<br/>
-
 ## 使用技術
 * HTML
 * CSS
 * JavaScript
-* JQuery
+* jQuery
 * BootStrap
 * PHP
 * MySQL
