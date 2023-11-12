@@ -1,0 +1,287 @@
+/* body背景色 */
+body {
+    background-color: #fffdf6;
+    font-family: 'Noto Serif TC', serif;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        margin-left: 300px;
+    }
+}
+
+/* navbar靠左 */
+.navbar.fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
+}
+
+@media screen and (min-width:768px) {
+    .navbar.fixed-left {
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 300px;
+        bottom: 0;
+        right: auto;
+    }
+
+    .navbar.fixed-left .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+}
+
+/* navbar間距&連結 */
+.navbar img {
+    width: 110px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar img {
+        width: 55px;
+        margin-left: 0;
+    }
+}
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.nav-link-wd {
+    font-size: 12px;
+    border-left: #0d2050 solid 1px;
+}
+
+.nav-border {
+    border: #0d2050 solid 1px;
+    border-radius: 10px;
+}
+
+.nav-border-out {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*navbar背景白色半透明由上到下漸層
+        background-image: linear-gradient(to bottom, #fffdf6, #fffdf6a0);*/
+        /*navbar背景白色半透明*/
+        background-color: #fffdf6;
+    }
+
+    .nav-icon-link {
+        margin-left: 15px;
+    }
+
+    .nav-border-out {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-border-out {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/* navbar hover變化 */
+.nav-link,
+.navbar-brand {
+    color: #0d2050;
+}
+
+.nav-link:visited,
+.navbar-brand:visited {
+    color: #0d2050;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #6677A3;
+}
+
+.nav-link:active,
+.navbar-brand:active {
+    color: #32416A;
+}
+
+/* carousel位置&高度 */
+.carousel-out {
+    position: relative;
+}
+
+.carousel-in {
+    position: absolute;
+    top: 10vh;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-in {
+        top: 15vh;
+    }
+}
+
+/* 圓角 */
+.bg-circle2 {
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+/* 文字大小和顏色 */
+.wd {
+    font-size: 13px;
+}
+
+.wd-color {
+    color: #6677A3;
+}
+
+.wd-color2 {
+    color: #32416A;
+}
+
+.wd-color3 {
+    color: #0d2050;
+}
+
+.contact-wdtype {
+    font-family: 'Young Serif', serif;
+}
+
+/* 按鈕顏色-淺色 hover變化 */
+.btn-border {
+    border-radius: 10px;
+}
+
+.btn-color {
+    border: #0d2050 1px solid;
+    color: #0d2050;
+}
+
+.btn-color:hover {
+    border: #6677A3 1px solid;
+    color: #6677A3;
+}
+
+.btn-color:active {
+    border: #32416A 1px solid;
+    color: #32416A;
+}
+
+/* 按鈕顏色-深色 hover變化 */
+.btn-color2 {
+    border: #0d2050 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+.btn-color2:hover {
+    border: #6677A3 1px solid;
+    color: #fffdf6;
+    background-color: #6677A3;
+}
+
+.btn-color2:active {
+    border: #32416A 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+/* form */
+.form-border {
+    border: #6677A3 solid 2px;
+    height: 80vh;
+    padding: 3vh 4vw 5vh 4vw;
+}
+
+.form-text-color,
+textarea {
+    border: #6677A3 solid 1px;
+    border-radius: 6px;
+    color: #6677A3;
+}
+
+form h6 {
+    margin-top: 2vh;
+}
+
+form textarea {
+    width: 85%;
+    height: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .form-border {
+        height: 75vh;
+    }
+
+    form h6 {
+        margin-top: 1.5vh;
+    }
+
+    form textarea {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+/* 確認-取消送出按鈕位置 */
+.send-out {
+    position: relative;
+}
+
+.send-in {
+    position: absolute;
+    bottom: 4%;
+    right: 2vw;
+}
+
+/* footer版權宣告 */
+.footer {
+    position: fixed;
+    top: 95%;
+    right: 4%;
+    text-align: end;
+    font-size: 12px;
+    color: #0d2050;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        right: 3%;
+        font-size: 8px;
+    }
+
+    .top-down {
+        margin-top: 2vh;
+    }
+}

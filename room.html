@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粼粼-房型介紹</title>
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- BNB專案CSS -->
+    <link rel="stylesheet" href="css/BNB_project_font.css">
+    <link rel="stylesheet" href="css/BNB_project_room.css">
+    <!-- favicon小圖示 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+
+<body>
+    <!-- navbar -->
+    <section>
+        <nav class="navbar navbar-expand-md fixed-left d-flex">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo001.png" alt="logo">
+            </a>
+            <!-- 漢堡 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- list -->
+            <div class="collapse navbar-collapse mt-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="about.html">
+                            <i class="fa-regular fa-bell pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">About<br />
+                                關於我們</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="room.html">
+                            <i class="fa-solid fa-bed pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3 pe-1">Room<br />
+                                房型介紹</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="reserve.php">
+                            <i class="fa-regular fa-calendar pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">Reserve<br />
+                                馬上預約</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="contact.php">
+                            <i class="fa-regular fa-square-check pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">Contact<br />
+                                聯絡我們</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="access.html">
+                            <i class="fa-solid fa-location-dot pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">Access<br />
+                                交通資訊</p>
+                        </a>
+                    </li>
+                    <!-- 登入註冊 -->
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" href="member/member_login.php"><button
+                                type="button" class="btn btn-color btn-border d-flex justify-content-center pt-3 px-5">
+                                <i class="fa-solid fa-arrow-right-to-bracket mt-2 me-3"></i>
+                                <p class="nav-link-wd ps-3 text-start text-nowrap">Login<br />
+                                    會員專區</p>
+                            </button></a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" href="member/member_register.php"><button
+                                type="button" class="btn btn-color btn-border d-flex justify-content-center pt-3 px-5">
+                                <i class="fa-regular fa-user mt-2 me-3"></i>
+                                <p class="nav-link-wd ps-3 text-start text-nowrap">register<br />
+                                    註冊會員</p>
+                            </button></a>
+                    </li>
+                </ul>
+                <br />
+            </div>
+        </nav>
+    </section>
+
+    <!-- bg-border room-labels -->
+    <div class="bg-border">
+        <!-- GroupList table -->
+        <div class="GroupList">
+            <a href="#GroupList1">
+                <button type="button" class="btn btn-reserve py-3" id="GroupList1-btn">
+                    <h4><b>2</b></h4>人<br>房<br>
+                </button>
+            </a>
+            <a href="#GroupList2">
+                <button type="button" class="btn btn-reserve py-3" id="GroupList2-btn">
+                    <h4><b>4</b></h4>人<br>房<br>
+                </button>
+            </a>
+            <a href="#GroupList3">
+                <button type="button" class="btn btn-reserve py-3" id="GroupList3-btn">
+                    <h4><b>6</b></h4>人<br>房<br>
+                </button>
+            </a>
+        </div>
+
+        <!-- carousel -->
+        <div class="container-fluid carousel-out ms-2">
+            <!-- #GroupList1 -->
+            <div class="row GroupList1 tab-inner" id="GroupList1">
+                <div class="col-xl-7 col-lg-8 col-md-12 carousel-in ms-2">
+                    <!-- carousel-fade 淡入淡出 -->
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators carousel-indicators-circle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="room-carousel carousel-inner">
+                            <div class="carousel-item carousel-item-height active bg-cover bg-circle"
+                                data-bs-interval="3000" style="background-image: url(images/room001.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room002.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room003.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room004.jpg);">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- room introduce -->
+                <div class="room-int">
+                    <div class="col-xl-5 col-lg-4 col-md-12 mt-4 px-3 mx-1">
+                        <div class="room-title pe-3">
+                            <h5 class="text-nowrap"><b>粼粼_2人房</b></h5>
+                            <p class="roomtype-int pt-3">海洋充滿了無盡的魅力，總是令人嚮往。當您步入粼粼時，強烈的海洋氣息會將您包圍，讓您沉浸在其中。</p>
+                            <hr>
+                            <p class="roomtype-int">房間風格簡約時尚，各個細節充滿了呼應海洋的巧思。您可以在陽台上欣賞美麗的海景，或者在客房中品嘗我們嚴選的風格茶葉與點心。</p>
+                            <hr><br>
+                        </div>
+                        <div class="row room-info">
+                            <dt class="col-md-4 col-sm-4">每晚價格</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>2,000/晚</p>
+                            </dd>
+                            <dt class="col-md-4 col-sm-4">浴室設備</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>淋浴&浴缸</p>
+                            </dd>
+                            <dt class="col-md-4 col-sm-4">窗外風景</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>海景房</p>
+                            </dd>
+                            <dt class="col-md-4 col-sm-4">服務</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>共用休息室</p>
+                                <p>露天游泳池</p>
+                                <p>行李寄存</p>
+                            </dd>
+                            <div>
+                                <!-- reserve-btn -->
+                                <a href="reserve.php" type="btn" class="btn btn-reserve text-nowrap">馬上預約</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #GroupList2 -->
+            <div class="row GroupList2 tab-inner" id="GroupList2" style="display: none;">
+                <div class="col-xl-7 col-lg-8 col-md-12 carousel-in ms-2">
+                    <!-- carousel-fade 淡入淡出 -->
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators carousel-indicators-circle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="room-carousel carousel-inner">
+                            <div class="carousel-item carousel-item-height active bg-cover bg-circle"
+                                data-bs-interval="3000" style="background-image: url(images/room001.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room002.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room003.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room004.jpg);">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- room introduce -->
+                <div class="room-int">
+                    <div class="col-xl-5 col-lg-4 col-md-12 mt-4 px-3 mx-1">
+                        <div class="room-title pe-3">
+                            <h5 class="text-nowrap"><b>粼粼_4人房</b></h5>
+                            <p class="roomtype-int pt-3">海洋充滿了無盡的魅力，總是令人嚮往。當您步入粼粼時，強烈的海洋氣息會將您包圍，讓您沉浸在其中。</p>
+                            <hr>
+                            <p class="roomtype-int">房間風格簡約時尚，各個細節充滿了呼應海洋的巧思。您可以在陽台上欣賞美麗的海景，或者在客房中品嘗我們嚴選的風格茶葉與點心。</p>
+                            <hr><br>
+                        </div>
+                        <div class="row room-info">
+                            <dt class="col-md-4 col-sm-4">每晚價格</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>3,500/晚</p>
+                            </dd>
+                            </dt>
+                            <dt class="col-md-4 col-sm-4">浴室設備</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>淋浴&浴缸</p>
+                            </dd>
+                            </dt>
+                            <dt class="col-md-4 col-sm-4">窗外風景</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>海景房</p>
+                            </dd>
+                            </dt>
+                            <dt class="col-md-4 col-sm-4">服務</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>共用休息室</p>
+                                <p>露天游泳池</p>
+                                <p>行李寄存</p>
+                            </dd>
+                            </dt>
+                            <div>
+                                <!-- reserve-btn -->
+                                <a href="reserve.php" type="btn" class="btn btn-reserve text-nowrap">馬上預約</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #GroupList3 -->
+            <div class="row GroupList3 tab-inner" id="GroupList3" style="display: none;">
+                <div class="col-xl-7 col-lg-8 col-md-12 carousel-in ms-2">
+                    <!-- carousel-fade 淡入淡出 -->
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators carousel-indicators-circle">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="room-carousel carousel-inner">
+                            <div class="carousel-item carousel-item-height active bg-cover bg-circle"
+                                data-bs-interval="3000" style="background-image: url(images/room001.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room002.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room003.jpg);">
+                            </div>
+                            <div class="carousel-item carousel-item-height bg-cover bg-circle" data-bs-interval="3000"
+                                style="background-image: url(images/room004.jpg);">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- room introduce -->
+                <div class="room-int">
+                    <div class="col-xl-5 col-lg-4 col-md-12 mt-4 px-3 mx-1">
+                        <div class="room-title pe-3">
+                            <h5 class="text-nowrap"><b>粼粼_6人房</b></h5>
+                            <p class="roomtype-int pt-3">海洋充滿了無盡的魅力，總是令人嚮往。當您步入粼粼時，強烈的海洋氣息會將您包圍，讓您沉浸在其中。</p>
+                            <hr>
+                            <p class="roomtype-int">房間風格簡約時尚，各個細節充滿了呼應海洋的巧思。您可以在陽台上欣賞美麗的海景，或者在客房中品嘗我們嚴選的風格茶葉與點心。</p>
+                            <hr><br>
+                        </div>
+                        <div class="row room-info">
+                            <dt class="col-md-4 col-sm-4">每晚價格</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>5,000/晚</p>
+                            </dd>
+                            </dt>
+                            <dt class="col-md-4 col-sm-4">浴室設備</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>淋浴&浴缸</p>
+                            </dd>
+                            </dt>
+                            <dt class="col-md-4 col-sm-4">窗外風景</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>海景房</p>
+                            </dd>
+                            </dt>
+                            <dt class="col-md-4 col-sm-4">服務</dt>
+                            <dd class="col-md-8 col-sm-6">
+                                <p>共用休息室</p>
+                                <p>露天游泳池</p>
+                                <p>行李寄存</p>
+                            </dd>
+                            </dt>
+                            <div>
+                                <!-- reserve-btn -->
+                                <a href="reserve.php" type="btn" class="btn btn-reserve text-nowrap">馬上預約</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <section>
+        <div class="footer">
+            <p><small>Copyright © 2023 All Rights Reserved.</small></p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(":button").click(function () {
+
+                if ($(this).attr("id") == "GroupList1-btn") {
+                    $("#GroupList1").show();
+                    $("#GroupList2").hide();
+                    $("#GroupList3").hide();
+                }
+                if ($(this).attr("id") == "GroupList2-btn") {
+                    $("#GroupList2").show();
+                    $("#GroupList1").hide();
+                    $("#GroupList3").hide();
+                }
+                if ($(this).attr("id") == "GroupList3-btn") {
+                    $("#GroupList3").show();
+                    $("#GroupList1").hide();
+                    $("#GroupList2").hide();
+                }
+            });
+        });
+    </script>
+    <!-- bootstrap javascript file -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

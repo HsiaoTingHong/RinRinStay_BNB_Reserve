@@ -1,0 +1,535 @@
+/* body 背景色*/
+body {
+    background-color: #fffdf6;
+    font-family: 'Noto Serif TC', serif;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        margin-left: 300px;
+    }
+}
+
+/* navbar */
+.navbar.fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
+}
+
+@media screen and (min-width:768px) {
+    .navbar.fixed-left {
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 300px;
+        bottom: 0;
+        right: auto;
+    }
+
+    .navbar.fixed-left .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+}
+
+.navbar img {
+    width: 110px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar img {
+        width: 55px;
+        margin-left: 0;
+    }
+}
+
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.nav-link-wd {
+    font-size: 12px;
+    border-left: #0d2050 solid 1px;
+}
+
+.nav-border {
+    border: #0d2050 solid 1px;
+    border-radius: 10px;
+}
+
+.nav-border-out {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*navbar背景白色半透明由上到下漸層
+        background-image: linear-gradient(to bottom, #fffdf6, #fffdf6a0);*/
+        /*navbar背景白色半透明*/
+        background-color: #fffdf6;
+    }
+
+    .nav-icon-link {
+        margin-left: 15px;
+    }
+
+    .nav-border-out {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-border-out {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/* hover */
+.nav-link,
+.navbar-brand {
+    color: #0d2050;
+}
+
+.nav-link:visited,
+.navbar-brand:visited {
+    color: #0d2050;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #6677A3;
+}
+
+.nav-link:active,
+.navbar-brand:active {
+    color: #32416A;
+}
+
+/* 按鈕顏色-淺色 hover變化 */
+.btn-border {
+    border-radius: 10px;
+}
+
+.btn-color {
+    border: #0d2050 1px solid;
+    color: #0d2050;
+}
+
+.btn-color:hover {
+    border: #6677A3 1px solid;
+    color: #6677A3;
+}
+
+.btn-color:active {
+    border: #32416A 1px solid;
+    color: #32416A;
+}
+
+/* 按鈕顏色-深色 hover變化 */
+.btn-color2 {
+    border: #0d2050 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+.btn-color2:hover {
+    border: #6677A3 1px solid;
+    color: #fffdf6;
+    background-color: #6677A3;
+}
+
+.btn-color2:active {
+    border: #32416A 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+/* carousel */
+.carousel-out {
+    position: relative;
+}
+
+.carousel-in {
+    position: absolute;
+    top: 2.5vh;
+    left: -0.5vw;
+}
+
+.carousel-item-height {
+    height: 73.5vh;
+}
+
+.carousel-indicators-circle {
+    display: flex;
+    flex-direction: column;
+    bottom: -1%;
+    left: -13%;
+    right: inherit;
+}
+
+.carousel-indicators-circle [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px -3px 0;
+    border-radius: 100%;
+    background-color: #fffdf6;
+}
+
+/* room */
+/* bg-border */
+.bg-border {
+    border: solid 1px #0d2050;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 65%;
+    position: absolute;
+}
+
+/* room 標籤與按鈕設定 */
+.GroupList .btn-reserve {
+    --bs-btn-color: #0D2050;
+    --bs-btn-bg: #fffdf6;
+    --bs-btn-border-color: #0D2050;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6677A3;
+    --bs-btn-hover-border-color: #6677A3;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #32416A;
+    --bs-btn-active-border-color: #32416A;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0D2050;
+    --bs-btn-disabled-border-color: #0D2050;
+    border-left: hidden;
+    border-radius: 1px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.btn-reserve {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0D2050;
+    --bs-btn-border-color: #0D2050;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6677A3;
+    --bs-btn-hover-border-color: #6677A3;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #32416A;
+    --bs-btn-active-border-color: #32416A;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0D2050;
+    --bs-btn-disabled-border-color: #0D2050;
+}
+
+/* 標籤 */
+.GroupList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -0.5px;
+    right: -2.8vw;
+    z-index: 10;
+}
+
+.room-int {
+    display: flex;
+    justify-content: end;
+    color: #0d2050;
+}
+
+.room-info {
+    margin-top: -3vh;
+}
+
+.room-info a {
+    margin-top: -2vh;
+}
+
+.room-int h5 {
+    letter-spacing: 5px;
+}
+
+.room-int p,
+hr {
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1199px) {
+    .GroupList {
+        right: -3.4vw;
+    }
+
+    .bg-border {
+        height: 80vh;
+    }
+
+    .container-fluid {
+        left: 0;
+        top: 0;
+    }
+
+    .room-carousel {
+        width: 60vw;
+        height: 40vh;
+        border-top-left-radius: 90px;
+        border-bottom-right-radius: 90px;
+    }
+
+    .room-title {
+        margin-top: 40vh;
+        margin-left: -42vw;
+        scale: 90%;
+        width: 30vw;
+    }
+
+    .room-info {
+        width: 40vw;
+        margin-top: -25vh;
+        margin-left: -12vw;
+        line-height: 0.8;
+    }
+
+    .room-info a {
+        margin-top: -12vh;
+        margin-left: -29.5vw;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .room-info {
+        margin-top: -26.5vh;
+    }
+
+    .room-info a {
+        margin-top: -14vh;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .GroupList {
+        right: -3.8vw;
+    }
+
+    .bg-border {
+        height: 80vh;
+        width: 60vw;
+    }
+
+    .room-carousel {
+        width: 55vw;
+    }
+
+    .room-title {
+        margin-left: -1vw;
+        width: 30vw;
+    }
+
+    .room-info {
+        margin-left: 27.5vw;
+        margin-top: -25.5vh;
+    }
+
+    .room-info a {
+        margin-left: -28.5vw;
+        margin-top: -12vh;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .room-info {
+        margin-top: -27.5vh;
+    }
+
+    .room-info a {
+        margin-top: -10vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .GroupList {
+        right: -4.8vw;
+    }
+
+    .bg-border {
+        height: 76vh;
+        width: 83vw;
+        margin-top: 14vh;
+        margin-left: 5vw;
+    }
+
+    .room-carousel {
+        width: 76vw;
+        height: 35vh;
+        margin-left: -1vw;
+    }
+
+    .room-title {
+        margin-top: 35vh;
+        margin-left: -10vw;
+        width: 40vw;
+    }
+
+    .room-info {
+        width: 40vw;
+        margin-left: 27.5vw;
+        margin-top: -25.5vh;
+    }
+
+    .room-info a {
+        margin-left: -37vw;
+        margin-top: -12vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .GroupList {
+        right: -6.4vw;
+    }
+
+    .bg-border {
+        height: 78vh;
+        width: 82vw;
+        margin-top: 14vh;
+        margin-left: 5vw;
+    }
+
+    .room-carousel {
+        margin-top: -0.5vh;
+        margin-left: -2vw;
+    }
+
+    .room-title {
+        margin-top: 36vh;
+        margin-left: 17vw;
+    }
+
+    .room-title p, .room-title hr {
+        display: none;
+    }
+
+    .room-info {
+        margin-right: 25vw;
+        margin-top: -2vh;
+        line-height: 0.7;
+    }
+
+    .room-info dt, .room-info p {
+        margin: 0;
+        margin-top: 0.4rem;
+    }
+
+    .room-info a {
+        margin-left: 30vw;
+        margin-top: -6vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .GroupList {
+        right: -8.4vw;
+    }
+    
+    .room-carousel {
+        width: 75vw;
+        margin-top: -1vh;
+        margin-left: -3vw;
+    }
+
+    .room-title {
+        margin-top: 35vh;
+        margin-left: 18vw;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .GroupList {
+        right: -9.8vw;
+    }
+
+    .bg-border {
+        margin-left: 4vw;
+    }
+
+    .room-carousel {
+        width: 74vw;
+        margin-top: -1vh;
+        margin-left: -3.5vw;
+    }
+    
+    .room-title {
+        margin-left: 20vw;
+    }
+}
+
+/* background image */
+.bg-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-circle {
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+
+/* footer */
+.footer {
+    position: fixed;
+    top: 95%;
+    right: 4%;
+    text-align: end;
+    font-size: 12px;
+    color: #0d2050;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* footer版權宣告 */
+    .footer {
+        right: 3%;
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粼粼-交通資訊</title>
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- BNB專案CSS -->
+    <link rel="stylesheet" href="css/BNB_project_font.css">
+    <link rel="stylesheet" href="css/BNB_project_access.css">
+    <!-- favicon小圖示 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+</head>
+
+<body onload="getAccess()">
+
+    <!-- navbar -->
+    <section>
+        <nav class="navbar navbar-expand-md fixed-left d-flex">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo001.png" alt="logo">
+            </a>
+            <!-- 漢堡 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- list -->
+            <div class="collapse navbar-collapse mt-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="about.html">
+                            <i class="fa-regular fa-bell pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">About<br />
+                                關於我們</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="room.html">
+                            <i class="fa-solid fa-bed pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3 pe-1">Room<br />
+                                房型介紹</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="reserve.php">
+                            <i class="fa-regular fa-calendar pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">Reserve<br />
+                                馬上預約</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="contact.php">
+                            <i class="fa-regular fa-square-check pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">Contact<br />
+                                聯絡我們</p>
+                        </a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" aria-current="page" href="access.html">
+                            <i class="fa-solid fa-location-dot pe-3 pb-3"></i>
+                            <p class="nav-link-wd ps-3">Access<br />
+                                交通資訊</p>
+                        </a>
+                    </li>
+                    <!-- 登入註冊 -->
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" href="member/member_login.php"><button
+                                type="button" class="btn btn-color btn-border d-flex justify-content-center pt-3 px-5">
+                                <i class="fa-solid fa-arrow-right-to-bracket mt-2 me-3"></i>
+                                <p class="nav-link-wd ps-3 text-start text-nowrap">Login<br />
+                                    會員專區</p>
+                            </button></a>
+                    </li>
+                    <li class="nav-item text-start">
+                        <a class="nav-link nav-icon align-items-center" href="member/member_register.php"><button
+                                type="button" class="btn btn-color btn-border d-flex justify-content-center pt-3 px-5">
+                                <i class="fa-regular fa-user mt-2 me-3"></i>
+                                <p class="nav-link-wd ps-3 text-start text-nowrap">register<br />
+                                    註冊會員</p>
+                            </button></a>
+                    </li>
+                </ul>
+                <br />
+            </div>
+        </nav>
+    </section>
+
+    <!-- access -->
+    <section class="map-out">
+        <div class="container-fluid map-in">
+            <div class="row justify-content-start">
+                <!-- google map -->
+                <div class="col-md-11 col-lg-7 map-blue">
+                    <iframe id="map" class="bg-circle map-height map-color"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37786.9163930808!2d121.60722337157085!3d24.094040083145575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346627fa2982158f%3A0x54beb3b2202a7046!2z5pu85rOi5rW354GY!5e0!3m2!1szh-TW!2stw!4v1692425553656!5m2!1szh-TW!2stw"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- access文字 -->
+                <div class="col-md-11 col-lg-4">
+                    <div class="row flex-column px-3">
+                        <div class="access-wd">
+                            <h4 class="text-nowrap">Access</h4>
+                        </div>
+                        <div class="access-wd access-border">
+                            <p class="text-nowrap"><b>粼粼</b></p>
+                            <p>電子信箱：rinrin_stay@gmail.com<br />
+                                電話：0900-000000<br />
+                                地址：XX市XX區XX路XX號</p>
+                        </div>
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-4 col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3 access-wd">
+                                            <p class="text-nowrap"><b>周邊環境</b></p>
+                                        </div>
+                                        <div class="col-md-9 access-wd access-wd-dot">
+                                            <ul>
+                                                <li id="around" name="around">天然海岸美景</li>
+                                                <li>植物森林</li>
+                                                <li>歷史古蹟</li>
+                                                <li>熱鬧夜市</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3 access-wd">
+                                            <p class="text-nowrap"><b>抵達方式</b></p>
+                                        </div>
+                                        <div class="col-md-9 access-wd access-wd-dot ">
+                                            <ul id="access" name="access"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section>
+        <div class="footer">
+            <p><small>Copyright © 2023 粼粼 All Rights Reserved.</small></p>
+        </div>
+    </section>
+
+    <!-- bootstrap javascript file -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <!-- jquery-3.7.0 CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- ajax -->
+    <script>
+        function getAccess() {
+            $.ajax({
+                url: "access_wd.php",
+                type: "post",
+                dataType: "text",
+                success: function (data) {
+                    $("#access").html(data);
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

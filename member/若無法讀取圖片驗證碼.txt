@@ -1,0 +1,5 @@
+請搜尋路徑xampp\php\php.ini
+
+內部查詢;extension=gd
+修改掉前面的分號
+並重啟apache

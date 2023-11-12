@@ -1,0 +1,264 @@
+/* body背景色 */
+body {
+    background-color: #fffdf6;
+    font-family: 'Noto Serif TC', serif;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        margin-left: 300px;
+    }
+}
+
+/* navbar靠左 */
+.navbar.fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
+}
+
+@media screen and (min-width:768px) {
+    .navbar.fixed-left {
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 300px;
+        bottom: 0;
+        right: auto;
+    }
+
+    .navbar.fixed-left .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+}
+
+/* navbar間距&連結 */
+.navbar img {
+    width: 110px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar img {
+        width: 55px;
+        margin-left: 0;
+    }
+}
+
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.nav-link-wd {
+    font-size: 12px;
+    border-left: #0d2050 solid 1.5px;
+}
+
+.nav-border {
+    border: #0d2050 solid 1.5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        /*navbar背景白色半透明由上到下漸層*/
+        background-image: linear-gradient(to bottom, #fffdf6, #fffdf6a0);
+        /*navbar背景白色半透明
+        background-color: #fffdf660;*/
+    }
+
+    .nav-icon-link {
+        margin-left: 15px;
+    }
+
+    .nav-border-out {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-border-out {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/* navbar hover變化 */
+.nav-link,
+.navbar-brand {
+    color: #0d2050;
+}
+
+.nav-link:visited,
+.navbar-brand:visited {
+    color: #0d2050;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #6677A3;
+}
+
+.nav-link:active,
+.navbar-brand:active {
+    color: #32416A;
+}
+
+/* 按鈕顏色-淺色 hover變化 */
+.btn-border {
+    border-radius: 10px;
+}
+
+.btn-color {
+    border: #0d2050 1px solid;
+    color: #0d2050;
+}
+
+.btn-color:hover {
+    border: #6677A3 1px solid;
+    color: #6677A3;
+}
+
+.btn-color:active {
+    border: #32416A 1px solid;
+    color: #32416A;
+}
+
+/* 按鈕顏色-深色 hover變化 */
+.btn-color2 {
+    border: #0d2050 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+.btn-color2:hover {
+    border: #6677A3 1px solid;
+    color: #fffdf6;
+    background-color: #6677A3;
+}
+
+.btn-color2:active {
+    border: #32416A 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+/* carousel位置&高度 */
+.carousel-out {
+    position: relative;
+}
+
+.carousel-in {
+    position: absolute;
+    top: 10vh;
+}
+
+.carousel-item-height {
+    height: 80vh;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-in {
+        top: 15vh;
+    }
+
+    .carousel-item-height {
+        height: 75vh;
+    }
+}
+
+/* carousel圓點位置&圓點 */
+.carousel-indicators-circle {
+    display: flex;
+    flex-direction: column;
+    bottom: -1%;
+    left: -13%;
+    right: inherit;
+}
+
+.carousel-indicators-circle [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px -3px 0;
+    border-radius: 100%;
+    background-color: #fffdf6;
+}
+
+/* 背景圖片 */
+.bg-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 圓角 */
+.bg-circle {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* carousel前文字 */
+.bg-word {
+    position: fixed;
+    top: 51%;
+    right: 4%;
+    z-index: 1030;
+    font-size: 70px;
+    color: #0d2050;
+    font-family: 'Young Serif', serif;
+    text-shadow: 0.05em 0.05em 0.05em #fffdf6b0;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-word {
+        top: 59%;
+        right: 2%;
+        font-size: 40px;
+        color: #fffdf6;
+        text-shadow: 0.05em 0.05em 0.05em #0d2050;
+    }
+}
+
+/* footer版權宣告 */
+.footer {
+    position: fixed;
+    top: 95%;
+    right: 4%;
+    text-align: end;
+    font-size: 12px;
+    color: #0d2050;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        right: 3%;
+        font-size: 8px;
+    }
+}

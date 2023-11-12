@@ -1,0 +1,202 @@
+/* 訂房確認body背景色 */
+body {
+    background-color: #32416A;
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* 文字大小和顏色 */
+.wd-color {
+    color: #6677A3;
+}
+
+.wd-color2 {
+    color: #32416A;
+}
+
+.wd-color3 {
+    color: #0d2050;
+}
+
+.wd-color4 {
+    color: #fffdf6;
+}
+
+/* 訂房確認中間區塊-位置 */
+.reserve-bg-out {
+    position: relative;    
+}
+
+.reserve-bg-in {
+    position: absolute;
+    top: 4vh;
+    right: 0;
+    left: 0;
+}
+
+/* 訂房確認中間區塊-背景色 */
+.reserve-bg {
+    height: 75vh;
+    color: #0d2050;
+    background-color: #fffdf6;
+}
+
+@media screen and (max-width: 768px) {    
+    .reserve-bg {
+        height: 77vh;
+    }
+}
+
+/* 文字大小和顏色 */
+.reserve-wd {
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+.reserve-wd-color {
+    color: #0d2050;
+}
+
+@media screen and (max-width: 768px) {
+    .reserve-wd {
+        font-size: 12px;
+    }
+}
+
+/* 確認-取消送出按鈕位置 */
+.send-out {
+    position: relative;
+}
+
+.send-in {
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+}
+
+@media screen and (max-width: 992px) {
+    .send-in {
+        bottom: 2%;
+    }
+}
+
+/* 訂房確認LOGO.箭頭icon hover變化 */
+.reserve-logo img {
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.back-home-icon {
+    color: #fffdf6;
+}
+
+.back-home-icon:hover {
+    color: #6677A3;
+}
+
+.back-home-icon:active {
+    color: #fffdf6;
+}
+
+/* 按鈕顏色-淺色 hover變化 */
+.btn-border {
+    border-radius: 10px;
+}
+
+.btn-color {
+    border: #0d2050 1px solid;
+    color: #0d2050;
+}
+
+.btn-color:hover {
+    border: #6677A3 1px solid;
+    color: #6677A3;
+}
+
+.btn-color:active {
+    border: #32416A 1px solid;
+    color: #32416A;
+}
+
+/* 按鈕顏色-深色 hover變化 */
+.btn-color2 {
+    border: #0d2050 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+.btn-color2:hover {
+    border: #6677A3 1px solid;
+    color: #fffdf6;
+    background-color: #6677A3;
+}
+
+.btn-color2:active {
+    border: #32416A 1px solid;
+    color: #fffdf6;
+    background-color: #32416A;
+}
+
+/* 房型照片 */
+.bg-pic {
+    height: 30vh;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.bg-pic-down {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .bg-pic {
+        height: 17vh;
+    }
+
+    .bg-pic-down {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg-pic {
+        height: 15vh;
+    }
+    
+}
+
+/* 背景圖片 */
+.bg-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 圓角 */
+.bg-circle2 {
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+/* form */
+.form-text-color {
+    border: #6677A3 solid 1px;
+    border-radius: 6px;
+    color: #6677A3;
+}
+
+/* 訂房確認footer版權宣告 */
+.footer {
+    position: fixed;
+    top: 95%;
+    right: 4%;
+    text-align: end;
+    font-size: 12px;
+    color: #fffdf6;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        right: 3%;
+        font-size: 8px;
+    }
+}
