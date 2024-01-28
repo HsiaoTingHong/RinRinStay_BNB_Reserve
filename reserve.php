@@ -77,7 +77,7 @@ if (!isset($_SESSION['sAccount']))
                     LEFT JOIN reserve AS b
                     ON a.roomType = b.roomType
                     AND (
-                        (b.checkInDate <= '" . $_SESSION['sCheckOutDate'] . "' AND b.checkOutDate > '" . $_SESSION['sCheckInDate'] . "')
+                        (b.checkInDate < '" . $_SESSION['sCheckOutDate'] . "' AND b.checkOutDate > '" . $_SESSION['sCheckInDate'] . "')
                         OR (b.checkInDate >= '" . $_SESSION['sCheckInDate'] . "' AND b.checkOutDate <= '" . $_SESSION['sCheckOutDate'] . "')
                         )
                     WHERE b.roomType IS NULL";
