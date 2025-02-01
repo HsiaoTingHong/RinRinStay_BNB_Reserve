@@ -10,11 +10,6 @@
 * 支援 RWD 響應式網頁
 <br/>
 
-## DEMO連結
-* [網頁前台](http://www.hsiaoting1003.byethost6.com/)
-* [後台管理](http://www.hsiaoting1003.byethost6.com/manage/)
-<br/>
-
 ## 測試帳號
 ```
 帳號 projectbnb@gmail.com
